@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50vw;
+    height: 60vh;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Place space between items */
+    gap: 40px;
+}
+
+.container>* {
+    width: 40px;
+    height: 30px;
+}
+/* flex: [flex-grow, flex-shrink, flex-basis] 
+flex: 1 20px; = flex-grow and flex-basis
+flex: 1 2 100px; = flex-grow, flex-shrink and flex-basis
+*/
+#item1{
+    background-color: darkgoldenrod;
+    flex: auto;
+}
+
+#item2{
+    background-color: darkolivegreen;
+    flex: auto;
+}
+
+#item3{
+    background-color: darkred;
+    /* Remaining space will be allocate to this item */
+    flex-grow: 2;
+}

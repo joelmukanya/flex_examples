@@ -1,0 +1,50 @@
+/* 
+root = html
+In here we need to create some custom properties 
+- Use var() to access the defined property
+*/
+:root{
+    --container-bgcolor: rgb(167, 164, 157);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* container */
+.container {
+    width: 60vw;
+    height: 50vh;
+    margin: 20px auto;
+    background-color: var(--container-bgcolor);
+    display: flex;
+    /* 
+    By default display: flex or inline-flex, will have a 
+    flex-direction by row then items will be display from top to 
+    bottom (because of how the cross axis display them).
+    */
+    flex-direction: column;
+    
+}
+
+/* Select all children of a div with class of container.
+If we dont give the items a size (width and height) then it will 
+strech to the bottom of it container
+*/
+
+/* .container>*{
+  
+} */
+
+#item1{
+    background-color: darkgoldenrod;
+}
+
+#item2 {
+    background-color: darkolivegreen;
+}
+
+#item3 {
+    background-color: darksalmon;
+}

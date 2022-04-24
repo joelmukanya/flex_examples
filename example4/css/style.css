@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 100vw;
+    height: 100vh;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+
+/* flex: [flex-grow, flex-shrink, flex-basis] 
+flex: 1 20px; = flex-grow and flex-basis
+flex: 1 2 100px; = flex-grow, flex-shrink and flex-basis
+*/
+/* header and footer */
+header, footer {
+    background-color: darkkhaki;
+}
+
+/* header */
+header {
+    flex: 1 1 50px;
+}
+
+/* main */
+main {
+    background-color: darkolivegreen;
+    flex: 1 50%;
+}
+
+/* footer */
+footer {
+    flex: 1 1 25px;
+}
