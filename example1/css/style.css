@@ -24,13 +24,13 @@ In here we need to create some custom properties
     flex-direction by row then items will be display from top to 
     bottom (because of how the cross axis display them).
     */
-    flex-direction: column;
+    /* flex-direction: column; */
     
 }
 
 /* Select all children of a div with class of container.
 If we dont give the items a size (width and height) then it will 
-strech to the bottom of it container
+stretch to the bottom of it container
 */
 
 /* .container>*{
